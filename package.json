@@ -1,7 +1,18 @@
 {
+  "name": "web3ix-v1",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run start:client\" \"npm run start:server\"",
+    "start:client": "cd client && npm start",
+    "start:server": "cd server && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
   "dependencies": {
-    "@emoji-mart/react": "^1.1.1",
-    "emoji-picker-react": "^4.12.2",
-    "react-router-dom": "^7.3.0"
+    "@solana/wallet-adapter-base": "^0.9.24",
+    "@solana/wallet-adapter-phantom": "^0.9.25",
+    "@solana/wallet-adapter-react": "^0.15.36",
+    "@solana/web3.js": "^1.98.0"
   }
 }
